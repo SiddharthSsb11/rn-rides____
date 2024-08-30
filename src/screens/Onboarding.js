@@ -41,15 +41,17 @@ const Onboarding = ({ navigation }) => {
             <View style={styles.titleContainer}>
               <Text style={styles.title}>
                 {item.title}{" "}
-                <Text
-                  style={{
-                    color: Colors.primary[500],
-                    fontSize: 32,
-                    fontFamily: "Poppins-ExtraBold",
-                  }}
-                >
-                  Rides
-                </Text>
+                {item.id === 1 && (
+                  <Text
+                    style={{
+                      color: Colors.primary[500],
+                      fontSize: 32,
+                      fontFamily: "Poppins-ExtraBold",
+                    }}
+                  >
+                    Rides
+                  </Text>
+                )}
               </Text>
             </View>
             <Text style={styles.description}>{item.description}</Text>
