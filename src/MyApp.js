@@ -175,7 +175,11 @@ const MyApp = () => {
 
   return (
     <>
-      <StatusBar backgroundColor="white" barStyle="dark-content" />
+      <StatusBar
+        translucent
+        backgroundColor="transparent"
+        barStyle="dark-content"
+      />
       <Stack.Navigator screenOptions={{ headerShown: false }}>
         <Stack.Screen name="Onboarding" component={Onboarding} />
         <Stack.Screen name="Signup" component={Signup} />
